@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaED - أشعل حماسك للمعرفة</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>NovaED - تحميل</title>
+    <link rel="icon" type="image/png" href="nova-logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,21 +55,21 @@
             z-index: -1;
             background: radial-gradient(ellipse at bottom, var(--background) 0%, var(--background-deep) 100%);
         }
-        
+
         .container {
             width: 90%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 15px;
         }
-        
+
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            padding-top: 60px; 
+            padding-top: 60px;
             overflow: hidden;
         }
 
@@ -79,13 +82,13 @@
         }
 
         .hero-text {
-            flex: 1.2; 
+            flex: 1.2;
             z-index: 2;
             text-align: right;
         }
 
         .hero h1 {
-            font-size: clamp(2.5rem, 6vw, 4.5rem); 
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
             font-weight: 900;
             margin-bottom: 25px;
             line-height: 1.2;
@@ -106,7 +109,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            perspective: 1000px; 
+            perspective: 1000px;
         }
 
         .hero-logo {
@@ -119,9 +122,17 @@
         }
 
         @keyframes float {
-            0% { transform: translatey(0px) rotate(-2deg); }
-            50% { transform: translatey(-25px) rotate(2deg); }
-            100% { transform: translatey(0px) rotate(-2deg); }
+            0% {
+                transform: translatey(0px) rotate(-2deg);
+            }
+
+            50% {
+                transform: translatey(-25px) rotate(2deg);
+            }
+
+            100% {
+                transform: translatey(0px) rotate(-2deg);
+            }
         }
 
         .download-buttons {
@@ -142,7 +153,7 @@
             font-size: 1.1rem;
             transition: all 0.3s ease;
             border: 2px solid transparent;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .btn-download i {
@@ -153,6 +164,7 @@
             background-color: var(--text-headings);
             color: var(--background-deep);
         }
+
         .btn-ios:hover {
             background-color: transparent;
             color: var(--text-headings);
@@ -165,6 +177,7 @@
             background-color: var(--primary);
             color: var(--text-headings);
         }
+
         .btn-android:hover {
             background-color: transparent;
             border-color: var(--primary);
@@ -185,12 +198,19 @@
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateX(-50%) translateY(0);
             }
+
             40% {
                 transform: translateX(-50%) translateY(-20px);
             }
+
             60% {
                 transform: translateX(-50%) translateY(-10px);
             }
@@ -202,11 +222,12 @@
             transform: translateY(50px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
+
         .section.visible {
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         .section-title {
             text-align: center;
             font-size: clamp(2rem, 5vw, 2.8rem);
@@ -248,9 +269,12 @@
         .feature-card::before {
             content: '';
             position: absolute;
-            top: 0; right: 0; bottom: 0; left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
             z-index: -1;
-            margin: -1px; 
+            margin: -1px;
             border-radius: inherit;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             opacity: 0;
@@ -315,45 +339,53 @@
                 flex-direction: column-reverse;
                 text-align: center;
             }
+
             .hero-text {
                 margin-top: 50px;
             }
+
             .hero p {
                 margin-right: auto;
                 margin-left: auto;
             }
+
             .download-buttons {
                 justify-content: center;
             }
         }
-        
+
         @media (max-width: 768px) {
             .hero {
                 padding-top: 100px;
                 padding-bottom: 80px;
-                min-height: auto; 
+                min-height: auto;
             }
+
             .hero-logo {
                 max-width: 300px;
             }
+
             .section {
                 padding: 80px 0;
             }
+
             .features-grid {
-                 grid-template-columns: 1fr;
-                 gap: 30px;
+                grid-template-columns: 1fr;
+                gap: 30px;
             }
+
             .download-buttons {
                 gap: 15px;
             }
+
             .btn-download {
                 padding: 12px 25px;
                 font-size: 1rem;
             }
         }
-
     </style>
 </head>
+
 <body>
 
     <canvas id="starfield"></canvas>
@@ -363,16 +395,19 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>أشعل حماسك للمعرفة مع <span style="color: var(--primary);">NovaED</span></h1>
-                    <p>انضم إلى ساحة التحدي الذهني، تنافس مع الأصدقاء واللاعبين، وتصدر لوحة النجوم في عالم المسابقات الممتعة.</p>
+                    <p>انضم إلى ساحة التحدي الذهني، تنافس مع الأصدقاء واللاعبين، وتصدر لوحة النجوم في عالم المسابقات
+                        الممتعة.</p>
                     <div class="download-buttons">
-                        <a href="#" class="btn-download btn-ios" aria-label="Download on the App Store">
+                        <a href="#" class="btn-download btn-ios" aria-label="Download for iOS">
                             <i class="fa-brands fa-apple"></i>
-                            <span>App Store</span>
+                            <span>Download on iOS</span>
                         </a>
-                        <a href="#" class="btn-download btn-android" aria-label="Get it on Google Play">
-                            <i class="fa-brands fa-google-play"></i>
-                            <span>Google Play</span>
+
+                        <a href="#" class="btn-download btn-android" aria-label="Download for Android">
+                            <i class="fa-brands fa-android"></i>
+                            <span>Download on Android</span>
                         </a>
+
                     </div>
                 </div>
                 <div class="hero-logo-container">
@@ -399,7 +434,7 @@
                     </div>
                     <div class="feature-card">
                         <div class="icon">
-                             <i class="fa-solid fa-trophy"></i>
+                            <i class="fa-solid fa-trophy"></i>
                         </div>
                         <h3>لوحات الصدارة</h3>
                         <p>تابع ترتيبك على المستوى المحلي والعالمي. هل تملك ما يلزم لتكون النجم الأول في NovaED؟</p>
@@ -429,19 +464,19 @@
             const ctx = canvas.getContext('2d');
 
             let stars = [];
-            const numStars = 350; 
+            const numStars = 350;
 
             function resizeCanvas() {
                 canvas.width = window.innerWidth;
                 canvas.height = window.innerHeight;
-                stars = []; 
+                stars = [];
                 for (let i = 0; i < numStars; i++) {
                     stars.push({
                         x: Math.random() * canvas.width,
                         y: Math.random() * canvas.height,
                         radius: Math.random() * 1.5 + 0.5,
                         alpha: Math.random(),
-                        speed: Math.random() * 0.15 + 0.05, 
+                        speed: Math.random() * 0.15 + 0.05,
                         direction: Math.random() > 0.5 ? 1 : -1
                     });
                 }
@@ -451,7 +486,7 @@
 
             function draw() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
-                
+
                 stars.forEach(star => {
                     ctx.beginPath();
                     ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
@@ -459,7 +494,7 @@
                     ctx.fill();
 
                     star.y -= star.speed;
-                    
+
                     star.alpha += 0.003 * star.direction;
 
                     if (star.y < 0) {
@@ -477,12 +512,12 @@
 
             const heroLogoContainer = document.querySelector('.hero-logo-container');
             const heroLogo = document.querySelector('.hero-logo');
-            
+
             heroLogoContainer.addEventListener('mousemove', (e) => {
                 const { left, top, width, height } = heroLogoContainer.getBoundingClientRect();
-                const x = (e.clientX - left - width / 2) / 25; 
+                const x = (e.clientX - left - width / 2) / 25;
                 const y = (e.clientY - top - height / 2) / 25;
-                
+
                 heroLogo.style.transform = `rotateX(${-y}deg) rotateY(${x}deg)`;
             });
 
@@ -500,7 +535,7 @@
                     }
                 });
             }, {
-                threshold: 0.15 
+                threshold: 0.15
             });
 
             sections.forEach(section => {
